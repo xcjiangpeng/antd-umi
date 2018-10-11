@@ -1,8 +1,12 @@
 export default {
     singular: true,
     routes: [{
-        path: '/',
-        component: './HelloWorld',
+        path: '/2',
+        component: '../layout/BaseLayout',
+        routes: [{
+            path: '',
+            component: './HelloWorld'
+        }]
     }, {
         path: '1',
         component: './ShoppingList'
@@ -10,7 +14,8 @@ export default {
     plugins: [
         ['umi-plugin-react', {
             // 这里暂时还没有添加配置，该插件还不会有作用，我们会在后面的课程按照需求打开相应的配置
-            antd: true
+            antd: true,
+            dva: true,
         }],
     ],
 }
