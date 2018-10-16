@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "set BROWSER=none&&umi dev",
-    "build": "set analyze=1&&umi build"
+    "dev": "umi dev",
+    "build": "umi build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "serve": "^10.0.2",
     "umi": "^2.1.1",
     "umi-plugin-react": "^1.1.1"
-  }
+  },
+  "dependencies": {}
 }
